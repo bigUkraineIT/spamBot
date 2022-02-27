@@ -17,7 +17,6 @@ with TelegramClient('name', api_id, api_hash) as client:
    while (1!=0):
       for i in range(msgSec):
          client.send_message(username, spamText)
-      print(msgSec+" messages have been sended! Sleep for " + timeSleep +" sec")
       time.sleep(timeSleep)
 
    client.run_until_disconnected()
