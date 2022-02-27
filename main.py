@@ -9,9 +9,9 @@ username = input()
 print("Text to spam: ")
 spamText = input()
 print("msgs in sec: ")
-msgSec = input()
+msgSec = int(input())
 print("timeSleep: ")
-timeSleep = input()
+timeSleep = int(input())
 
 with TelegramClient('name', api_id, api_hash) as client:
    while (1!=0):
